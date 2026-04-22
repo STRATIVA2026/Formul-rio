@@ -18,6 +18,8 @@ from openpyxl.styles import Font, PatternFill, Alignment
 from datetime import datetime
 from functools import wraps
 import os
+import eventlet
+eventlet.monkey_patch()
 
 app = Flask(__name__)
 app.secret_key = "strativa_chave_secreta_2026"
