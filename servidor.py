@@ -25,8 +25,8 @@ app.secret_key = "strativa_chave_secreta_2026"
 # SocketIO permite enviar dados em tempo real para o browser
 socketio = SocketIO(app, cors_allowed_origins="*")
 
-ADMIN_UTILIZADOR = "nadia"
-ADMIN_PASSWORD   = "strativa2026"
+ADMIN_UTILIZADOR = "ADMIN"
+ADMIN_PASSWORD   = "GDNM"
 NOME_BASE_DADOS  = "strativa.db"
 
 
@@ -550,7 +550,7 @@ LOGIN_HTML = """<!DOCTYPE html>
     <p class="text-center text-[9px] tracking-widest text-zinc-700 uppercase">Acesso restrito · Não partilhes este link</p>
   </div>
 </body>
-</html>"""
+</>"""
 
 
 # ============================================================
