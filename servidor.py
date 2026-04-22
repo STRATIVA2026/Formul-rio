@@ -838,4 +838,5 @@ if __name__ == "__main__":
     print("  Admin:       http://localhost:5000/admin")
     print("  Para parar:  CTRL + C")
     print("=" * 52)
-    socketio.run(app, debug=True, port=5000, allow_unsafe_werkzeug=True)
+    port = int(os.environ.get("PORT", 5000))
+socketio.run(app, host="0.0.0.0", port=port)
