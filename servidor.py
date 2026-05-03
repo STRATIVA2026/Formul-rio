@@ -838,7 +838,7 @@ if __name__ == "__main__":
     print("  Servidor Strativa iniciado!")
     print("  Formulario:  http://localhost:5000")
     print("  Admin:       http://localhost:5000/admin")
-    print("  Para parar:  CTRL + C")
     print("=" * 52)
+
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    socketio.run(app, host="0.0.0.0", port=port)
